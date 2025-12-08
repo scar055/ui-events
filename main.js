@@ -108,3 +108,11 @@ flip.addEventListener("animationend", function () {
   flip.classList.remove("pilf");
   flip.classList.remove("flip");
 });
+
+// keyup
+let keyUp = document.querySelector('a[href="#user"]');
+
+keyUp.addEventListener("keyup", function () {
+  keyUp.classList.add("keyup");
+  console.log("test");
+});
