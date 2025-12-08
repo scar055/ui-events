@@ -74,3 +74,10 @@ focus.addEventListener("focus", function () {
 focus.addEventListener("blur", function () {
   focus.classList.remove("colors");
 });
+
+//mouseover
+let mouseOver = document.querySelector('a[href="#fix"]');
+
+mouseOver.addEventListener("mouseover", function () {
+  mouseOver.textContent = "mouse hover werkt";
+});
