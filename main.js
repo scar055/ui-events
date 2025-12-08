@@ -138,3 +138,11 @@ let wheelScroll = document.querySelector('a[href="#events"]');
 wheelScroll.addEventListener("wheel", function (Y) {
   wheelScroll.style.setProperty("--font", Y.deltaY + "px");
 });
+
+// mouse gradient
+let mouseTrack = document.querySelector('a[href="#interaction"]');
+
+mouseTrack.addEventListener("mousemove", function (move) {
+  mouseTrack.style.setProperty("--y", move.offsetY + "px");
+  mouseTrack.style.setProperty("--x", move.offsetX + "px");
+});
