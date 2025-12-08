@@ -75,9 +75,20 @@ focus.addEventListener("blur", function () {
   focus.classList.remove("colors");
 });
 
-//mouseover
+//mouse over
 let mouseOver = document.querySelector('a[href="#fix"]');
 
 mouseOver.addEventListener("mouseover", function () {
   mouseOver.textContent = "mouse hover werkt";
+});
+
+// mouse out
+let mouseOut = document.querySelector('a[href="#the"]');
+
+mouseOut.addEventListener("mouseout", function () {
+  mouseOut.classList.add("mouseOutTurn");
+});
+
+mouseOut.addEventListener("animationend", function () {
+  mouseOut.classList.remove("mouseOutTurn");
 });

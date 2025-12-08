@@ -178,3 +178,21 @@ a[href="#design"] {
   background-color: var(--highlight-secondary);
   transition: .5s ease-in-out;
 }
+
+/* mouse out rotate */
+
+@keyframes mouseout {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.mouseOutTurn {
+  animation-name: mouseout;
+  animation-iteration-count: 1;
+  animation-duration: .5s;
+}
