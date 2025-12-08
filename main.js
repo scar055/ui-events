@@ -51,3 +51,14 @@ translateLink.addEventListener("animationend", function () {
   translateLink.classList.remove("translate");
 });
 
+//shake
+
+let shake = document.querySelector('a[href="#development"]');
+
+shake.addEventListener("dblclick", function () {
+  shake.classList.add("shake");
+});
+
+shake.addEventListener("animationend", function () {
+  shake.classList.remove("shake");
+});

@@ -141,4 +141,32 @@ a[href="#design"] {
   animation-duration: 1s;
 }
 
+/* shake */
+
+@keyframes shake {
+  0% {
+    translate: 1em 0;
+  }
+
+  25% {
+    translate: -1em 0
+  }
+
+  50% {
+    translate: 1em 0;
+  }
+
+  75% {
+    translate: -1em 0
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
+
+.shake {
+  animation-name: shake;
+  animation-iteration-count: 2;
+  animation-duration: .5s;
 }
