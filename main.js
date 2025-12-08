@@ -92,3 +92,19 @@ mouseOut.addEventListener("mouseout", function () {
 mouseOut.addEventListener("animationend", function () {
   mouseOut.classList.remove("mouseOutTurn");
 });
+
+// flip en terug
+let flip = document.querySelector('a[href="#flow"]');
+
+flip.addEventListener("mousedown", function () {
+  flip.classList.add("flip");
+});
+
+flip.addEventListener("mouseup", function () {
+  flip.classList.add("pilf");
+});
+
+flip.addEventListener("animationend", function () {
+  flip.classList.remove("pilf");
+  flip.classList.remove("flip");
+});
