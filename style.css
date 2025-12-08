@@ -118,3 +118,27 @@ a[href="#design"] {
   animation-iteration-count: 1;
   animation-duration: 1s;
 }
+
+/* translate link */
+
+@keyframes translateLink {
+  0% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -1em;
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
+
+.translate {
+  animation-name: translateLink;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+}

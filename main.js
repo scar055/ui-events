@@ -39,3 +39,15 @@ scaleLink.addEventListener("click", function () {
 scaleLink.addEventListener("animationend", function () {
   scaleLink.classList.remove("scale");
 });
+
+//translate animation
+let translateLink = document.querySelector('a[href="#and"]');
+
+translateLink.addEventListener("click", function () {
+  translateLink.classList.add("translate");
+});
+
+translateLink.addEventListener("animationend", function () {
+  translateLink.classList.remove("translate");
+});
+
