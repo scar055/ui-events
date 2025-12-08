@@ -62,3 +62,15 @@ shake.addEventListener("dblclick", function () {
 shake.addEventListener("animationend", function () {
   shake.classList.remove("shake");
 });
+
+//focus
+
+let focus = document.querySelector('a[href="#sprint-5"]');
+
+focus.addEventListener("focus", function () {
+  focus.classList.add("colors");
+});
+
+focus.addEventListener("blur", function () {
+  focus.classList.remove("colors");
+});

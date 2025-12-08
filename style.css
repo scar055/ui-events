@@ -170,3 +170,11 @@ a[href="#design"] {
   animation-iteration-count: 2;
   animation-duration: .5s;
 }
+
+/* kleuren animatie focus */
+
+.colors {
+  color: var(--highlight-primary);
+  background-color: var(--highlight-secondary);
+  transition: .5s ease-in-out;
+}
