@@ -114,5 +114,27 @@ let keyUp = document.querySelector('a[href="#user"]');
 
 keyUp.addEventListener("keyup", function () {
   keyUp.classList.add("keyup");
-  console.log("test");
+});
+
+// keydown balloon
+let balloon = document.querySelector('a[href="#interface"]');
+
+balloon.addEventListener("keydown", function () {
+  balloon.classList.add("balloon");
+});
+
+balloon.addEventListener("keyup", function () {
+  balloon.classList.remove("balloon");
+  balloon.classList.add("deflate");
+});
+
+balloon.addEventListener("animationend", function () {
+  balloon.classList.remove("deflate");
+});
+
+// scroll
+let wheelScroll = document.querySelector('a[href="#events"]');
+
+wheelScroll.addEventListener("wheel", function (Y) {
+  wheelScroll.style.setProperty("--font", Y.deltaY + "px");
 });
