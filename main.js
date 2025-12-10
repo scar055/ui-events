@@ -134,9 +134,16 @@ balloon.addEventListener("animationend", function () {
 
 // scroll
 let wheelScroll = document.querySelector('a[href="#events"]');
+let size = 20;
 
 wheelScroll.addEventListener("wheel", function (Y) {
-  wheelScroll.style.setProperty("--font", Y.deltaY + "px");
+  if (Y.deltaY > 0) {
+    size++;
+  } else if (Y.deltaY < 0) {
+    size--;
+  }
+
+  wheelScroll.style.setProperty("--font", size + "px");
 });
 
 // mouse gradient
